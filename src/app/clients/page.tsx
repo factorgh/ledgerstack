@@ -24,7 +24,7 @@ export default function ClientsPage() {
         badge="CLIENT PARTNERSHIPS"
         title="Powering operations for"
         highlight="leading Ghanaian enterprises."
-        description="Explore how organizations across food manufacturing, infrastructure engineering, church ministry administration, IT, and pharmaceutical healthcare rely on Ledgerstack for software, training, and support."
+        description="Explore how organizations across food manufacturing, cloud communications (CPaaS), church management software, IT, and pharmaceutical healthcare rely on Ledgerstack for software, training, and support."
       />
 
       {/* Client Showcase Grid */}
