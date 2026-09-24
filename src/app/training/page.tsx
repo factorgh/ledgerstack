@@ -108,10 +108,10 @@ export default function TrainingPage() {
   return (
     <div className="flex flex-col w-full">
       <PageHeader
-        badge="CAPACITY BUILDING &amp; WORKSHOPS"
+        badge="TRAINING ON ACCOUNTING SOFTWARES"
         title="Transform software into"
         highlight="real operational capability."
-        description="Software produces value only when teams have the muscle memory to use it accurately. We deliver practical, scenario-based training for Ghanaian corporate teams, finance professionals, and business leaders."
+        description="Software produces value only when teams and students have the practical muscle memory to use it accurately. We deliver hands-on, scenario-based training on TallyPrime, QuickBooks, ERPNext, Odoo, and Zoho Books for corporate workers, finance professionals, and accounting students across Ghana."
       />
 
       {/* Course Tracks Grid */}

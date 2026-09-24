@@ -57,7 +57,7 @@ export default function WebDesignPage() {
   return (
     <div className="flex flex-col w-full">
       <PageHeader
-        badge="DIGITAL DESIGN &amp; ENGINEERING"
+        badge="WEB DEVELOPMENT &amp; GRAPHIC DESIGN"
         title="Digital touchpoints that command"
         highlight="instant authority."
         description="We craft high-performance corporate websites, tailored web applications, and coherent brand identities engineered to elevate credibility and drive business conversion."

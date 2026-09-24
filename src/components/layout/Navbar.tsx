@@ -300,19 +300,19 @@ export const Navbar: React.FC = () => {
               </Link>
               <div className="pl-4 space-y-1 border-l border-zinc-200 my-1">
                 <Link href="/solutions" className="block py-1.5 text-xs text-zinc-600 hover:text-amber-600 font-medium">
-                  • Business Solution Implementation
+                  • 1. Implementation of Business Solution Software
                 </Link>
                 <Link href="/training" className="block py-1.5 text-xs text-zinc-600 hover:text-amber-600 font-medium">
-                  • Training & Capacity Building
+                  • 2. Training for Corporate Workers &amp; Students on Accounting Softwares
                 </Link>
                 <Link href="/web-design" className="block py-1.5 text-xs text-zinc-600 hover:text-amber-600 font-medium">
-                  • Web Development & Graphic Design
+                  • 3. Web Development and Graphic Design
                 </Link>
                 <Link href="/support" className="block py-1.5 text-xs text-zinc-600 hover:text-amber-600 font-medium">
-                  • 24/7 Support & Maintenance
+                  • 4. 24/7 Support Service on Implemented Business Solutions
                 </Link>
                 <Link href="/email" className="block py-1.5 text-xs text-zinc-600 hover:text-amber-600 font-medium">
-                  • Business Email Services
+                  • 5. Business Email Services
                 </Link>
               </div>
               <Link

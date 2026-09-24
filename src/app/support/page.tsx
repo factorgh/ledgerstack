@@ -48,10 +48,10 @@ export default function SupportPage() {
   return (
     <div className="flex flex-col w-full">
       <PageHeader
-        badge="24/7 SUPPORT &amp; MAINTENANCE"
+        badge="24/7 SUPPORT ON IMPLEMENTED BUSINESS SOLUTIONS"
         title="We stay in your corner"
         highlight="after implementation."
-        description="Go-live is not the end of our relationship; it is the beginning of your daily operational rhythm. We provide dependable post-implementation support, proactive maintenance, and immediate troubleshooting across Ghana."
+        description="Go-live is not the end of our relationship; it is the beginning of your daily operational rhythm. We provide dependable 24/7 post-implementation support, proactive maintenance, and immediate troubleshooting for your implemented business solutions across Ghana."
       />
 
       {/* Direct Contact Bar */}

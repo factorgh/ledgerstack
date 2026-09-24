@@ -52,7 +52,7 @@ export default function BusinessEmailPage() {
   return (
     <div className="flex flex-col w-full">
       <PageHeader
-        badge="BUSINESS EMAIL &amp; CLOUD COLLABORATION"
+        badge="BUSINESS EMAIL SERVICES"
         title="Professional email infrastructure that"
         highlight="builds customer trust."
         description="Stop sending corporate quotations from generic free email accounts. We set up, secure, and manage branded business email on Google Workspace, Microsoft 365, and private mail servers."
