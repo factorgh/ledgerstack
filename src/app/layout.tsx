@@ -85,13 +85,13 @@ export default function RootLayout({
       "Ghanaian business technology solutions company specializing in business management software, capacity building, web development, and dedicated support.",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Accra",
+      addressLocality: "Tema Community 18, Block Factory",
       addressRegion: "Greater Accra Region",
       addressCountry: "GH",
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+233547790310",
+      telephone: "+233267342160",
       contactType: "customer service",
       areaServed: "GH",
       availableLanguage: "en",

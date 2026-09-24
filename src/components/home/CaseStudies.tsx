@@ -24,7 +24,7 @@ export const CaseStudies: React.FC = () => {
               Helping businesses <span className="text-gradient-gold">work better.</span>
             </h2>
             <p className="text-zinc-600 text-sm sm:text-base lg:text-lg leading-relaxed">
-              We partner with organizations across food processing, infrastructure engineering, logistics, tech, and retail healthcare to build resilient operational systems.
+              We partner with organizations across food processing, infrastructure engineering, church administration, tech, and retail healthcare to build resilient operational systems.
             </p>
           </div>
 
