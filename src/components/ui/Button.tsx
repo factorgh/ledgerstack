@@ -36,19 +36,19 @@ export const Button: React.FC<ButtonProps> = ({
 
   const variantStyles = {
     primary:
-      "bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 text-white font-semibold hover:from-amber-600 hover:to-amber-800 shadow-md shadow-amber-500/25 border border-amber-400/40",
+      "bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold border border-amber-500 shadow-sm",
     secondary:
-      "bg-zinc-900 hover:bg-zinc-800 text-white font-medium border border-zinc-800 hover:border-amber-500/30 shadow-sm",
+      "bg-zinc-900 hover:bg-zinc-800 text-white font-medium border border-zinc-800 shadow-sm",
     outline:
       "bg-white hover:bg-zinc-50 text-zinc-800 border border-zinc-300 hover:border-amber-500 hover:text-amber-700 shadow-xs",
     ghost:
       "bg-transparent hover:bg-zinc-100 text-zinc-700 hover:text-zinc-900",
     gold:
-      "bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold shadow-md shadow-amber-500/30",
+      "bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold border border-amber-500 shadow-sm",
     white:
-      "bg-white hover:bg-zinc-50 text-zinc-900 font-semibold shadow-md border border-zinc-200",
+      "bg-white hover:bg-zinc-50 text-zinc-900 font-semibold shadow-xs border border-zinc-200",
     dark:
-      "bg-black hover:bg-zinc-900 text-white font-semibold border border-zinc-800 shadow-md",
+      "bg-black hover:bg-zinc-900 text-white font-semibold border border-zinc-800 shadow-sm",
   };
 
   const content = (
