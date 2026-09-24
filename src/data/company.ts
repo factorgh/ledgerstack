@@ -38,7 +38,7 @@ export interface SoftwarePlatform {
 
 export const COMPANY_INFO = {
   name: "Ledgerstack Technologies",
-  legalName: "Ledgerstack Technologies Ltd",
+  legalName: "Ledgerstack Technologies",
   tagline: "Driving efficiency through technology",
   description:
     "Ledgerstack Technologies is a Ghanaian technology and business-solutions company that helps organizations improve their operations through business management software, practical training, modern digital services, and dependable technical support.",

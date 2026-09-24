@@ -78,7 +78,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Corporation",
     name: "Ledgerstack Technologies",
-    alternateName: "Ledgerstack Technologies Ltd",
+    alternateName: "Ledgerstack",
     url: "https://ledgerstacktechnologies.com",
     logo: "https://ledgerstacktechnologies.com/logo.png",
     description:
