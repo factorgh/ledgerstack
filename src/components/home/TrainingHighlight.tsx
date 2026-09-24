@@ -26,28 +26,28 @@ export const TrainingHighlight: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 lg:py-28 bg-white border-t border-zinc-200/80 relative">
+    <section className="py-14 sm:py-20 lg:py-28 bg-white border-t border-zinc-200/80 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl bg-gradient-to-br from-zinc-950 via-zinc-900 to-black text-white border border-zinc-800 p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
+        <div className="rounded-3xl bg-gradient-to-br from-zinc-950 via-zinc-900 to-black text-white border border-zinc-800 p-5 sm:p-10 lg:p-16 shadow-2xl relative overflow-hidden">
           {/* Ambient gold lighting */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
             {/* Left Content */}
-            <div className="lg:col-span-6 space-y-6">
+            <div className="lg:col-span-6 space-y-5 sm:space-y-6">
               <Badge variant="dark" size="md">
                 CAPACITY BUILDING &amp; WORKSHOPS
               </Badge>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
                 Turn software into <span className="text-gradient-gold-light">capability.</span>
               </h2>
 
-              <p className="text-zinc-300 text-base sm:text-lg leading-relaxed font-normal">
+              <p className="text-zinc-300 text-sm sm:text-base lg:text-lg leading-relaxed font-normal">
                 Even the most powerful business software produces zero return if your team hesitates to use it. We transform complex software workflows into clear, repeatable daily habits through hands-on, practical simulation.
               </p>
 
-              <div className="space-y-3 pt-2">
+              <div className="space-y-2.5 sm:space-y-3 pt-1">
                 {[
                   "Hands-on exercises with real transaction scenarios",
                   "Role-based focus: cashiers, warehouse leads, accountants, and executives",
@@ -60,7 +60,7 @@ export const TrainingHighlight: React.FC = () => {
                 ))}
               </div>
 
-              <div className="pt-4 flex flex-wrap items-center gap-4">
+              <div className="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
                 <Button
                   variant="primary"
                   size="lg"

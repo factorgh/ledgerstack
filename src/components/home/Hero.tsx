@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
 
   return (
-    <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-gradient-to-b from-white via-[#FAF9F5] to-[#F5F3ED]/40 border-b border-zinc-200/80">
+    <section className="relative pt-24 pb-12 sm:pt-32 sm:pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-gradient-to-b from-white via-[#FAF9F5] to-[#F5F3ED]/40 border-b border-zinc-200/80">
       {/* Background ambient gradient beams */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] pointer-events-none overflow-hidden">
         <div className="absolute top-[-150px] left-1/4 w-[500px] h-[500px] bg-amber-500/8 rounded-full blur-[120px]" />
@@ -27,22 +27,22 @@ export const Hero: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           {/* Left Hero Content */}
-          <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div className="lg:col-span-7 space-y-5 sm:space-y-6 text-center lg:text-left">
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl xl:text-6xl font-extrabold text-zinc-950 tracking-tight leading-[1.12]">
+            <h1 className="text-3xl sm:text-5xl xl:text-6xl font-extrabold text-zinc-950 tracking-tight leading-[1.15] sm:leading-[1.12]">
               Drive your business forward with{" "}
               <span className="text-gradient-gold">technology that works.</span>
             </h1>
 
             {/* Supporting Copy */}
-            <p className="text-base sm:text-lg text-zinc-600 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
+            <p className="text-sm sm:text-lg text-zinc-600 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
               Ledgerstack Technologies helps businesses streamline operations, implement powerful business software, empower their teams, and stay supported with reliable technology solutions.
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-2.5 sm:gap-3.5 pt-1">
               <Button
                 variant="primary"
                 size="lg"

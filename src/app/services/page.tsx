@@ -46,48 +46,48 @@ export default function ServicesPage() {
       />
 
       {/* Services Detailed Breakdown */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+      <section className="py-14 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
           {SERVICES.map((srv, index) => {
             const isEven = index % 2 === 1;
             return (
               <div
                 key={srv.id}
                 id={srv.slug}
-                className="scroll-mt-32 p-8 sm:p-12 rounded-3xl bg-white border border-zinc-200/90 shadow-lg relative overflow-hidden"
+                className="scroll-mt-32 p-5 sm:p-8 lg:p-12 rounded-3xl bg-white border border-zinc-200/90 shadow-lg relative overflow-hidden"
               >
-                <div className={`grid grid-cols-1 lg:grid-cols-12 gap-10 items-start ${isEven ? "lg:flex-row-reverse" : ""}`}>
+                <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start ${isEven ? "lg:flex-row-reverse" : ""}`}>
                   {/* Left Overview */}
-                  <div className="lg:col-span-6 space-y-6">
+                  <div className="lg:col-span-6 space-y-4 sm:space-y-6">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-200 text-amber-700 flex items-center justify-center">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-amber-50 border border-amber-200 text-amber-700 flex items-center justify-center shrink-0">
                         {iconMap[srv.iconName]}
                       </div>
                       <div>
-                        <span className="text-xs font-mono text-amber-800 font-bold uppercase tracking-wider">
+                        <span className="text-[10px] sm:text-xs font-mono text-amber-800 font-bold uppercase tracking-wider">
                           Service 0{index + 1}
                         </span>
-                        <h2 className="text-2xl sm:text-3xl font-bold text-zinc-950 tracking-tight">
+                        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-zinc-950 tracking-tight">
                           {srv.title}
                         </h2>
                       </div>
                     </div>
 
-                    <p className="text-zinc-600 text-sm sm:text-base leading-relaxed">
+                    <p className="text-zinc-600 text-xs sm:text-sm lg:text-base leading-relaxed">
                       {srv.fullDesc}
                     </p>
 
                     {/* Supported Platforms / Tools */}
                     {srv.supportedTools && (
                       <div className="space-y-2">
-                        <div className="text-xs font-bold uppercase tracking-wider text-zinc-500">
+                        <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-zinc-500">
                           Platforms Supported
                         </div>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-1.5 sm:gap-2">
                           {srv.supportedTools.map((tool) => (
                             <span
                               key={tool}
-                              className="px-3 py-1 rounded-xl bg-zinc-50 border border-zinc-200 text-xs font-mono font-bold text-zinc-800"
+                              className="px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-xl bg-zinc-50 border border-zinc-200 text-[11px] sm:text-xs font-mono font-bold text-zinc-800"
                             >
                               {tool}
                             </span>
@@ -98,14 +98,14 @@ export default function ServicesPage() {
 
                     {/* Target Audience */}
                     <div className="space-y-2">
-                      <div className="text-xs font-bold uppercase tracking-wider text-zinc-500">
+                      <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-zinc-500">
                         Designed For
                       </div>
                       <div className="flex flex-wrap gap-1.5">
                         {srv.audience.map((aud) => (
                           <span
                             key={aud}
-                            className="px-2.5 py-1 rounded-lg bg-zinc-100 text-zinc-700 text-xs font-medium"
+                            className="px-2.5 py-0.5 sm:py-1 rounded-lg bg-zinc-100 text-zinc-700 text-[11px] sm:text-xs font-medium"
                           >
                             {aud}
                           </span>
@@ -113,7 +113,7 @@ export default function ServicesPage() {
                       </div>
                     </div>
 
-                    <div className="pt-2 flex flex-wrap gap-3">
+                    <div className="pt-2 flex flex-col sm:flex-row gap-2.5 sm:gap-3">
                       <Button
                         variant="primary"
                         size="md"
@@ -128,14 +128,14 @@ export default function ServicesPage() {
                           href={`/${srv.slug}`}
                           showArrow
                         >
-                          Dedicated {srv.title} Page
+                          Dedicated Page
                         </Button>
                       )}
                     </div>
                   </div>
 
                   {/* Right Deliverables Checklist */}
-                  <div className="lg:col-span-6 bg-zinc-50 rounded-2xl border border-zinc-200/90 p-6 sm:p-8 space-y-4">
+                  <div className="lg:col-span-6 bg-zinc-50 rounded-2xl border border-zinc-200/90 p-4 sm:p-6 lg:p-8 space-y-4">
                     <div className="text-xs font-bold uppercase tracking-wider text-zinc-800 flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-amber-600" />
                       <span>Standard Engagement Deliverables</span>

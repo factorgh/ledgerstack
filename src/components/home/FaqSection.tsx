@@ -12,16 +12,16 @@ export const FaqSection: React.FC = () => {
   }));
 
   return (
-    <section className="py-20 lg:py-28 bg-white border-t border-zinc-200/80 relative">
+    <section className="py-14 sm:py-20 lg:py-28 bg-white border-t border-zinc-200/80 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center space-y-4 mb-16">
+        <div className="text-center space-y-3 sm:space-y-4 mb-10 sm:mb-16">
           <Badge variant="gold" size="md">
             COMMON QUESTIONS
           </Badge>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight">
             Frequently asked <span className="text-gradient-gold">questions.</span>
           </h2>
-          <p className="text-zinc-600 text-base leading-relaxed">
+          <p className="text-zinc-600 text-sm sm:text-base leading-relaxed">
             Everything you need to know about our implementation process, supported platforms, training programs, and ongoing technical support.
           </p>
         </div>

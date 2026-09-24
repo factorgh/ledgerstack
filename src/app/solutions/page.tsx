@@ -41,13 +41,13 @@ export default function SolutionsPage() {
       />
 
       {/* Solutions Detailed Grid */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <section className="py-14 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-16">
           <div className="text-center max-w-3xl mx-auto space-y-3">
             <Badge variant="gold" size="md">
               SUPPORTED PLATFORMS
             </Badge>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight">
               Enterprise platforms configured to your exact workflows
             </h2>
             <p className="text-zinc-600 text-sm sm:text-base leading-relaxed">
@@ -55,14 +55,14 @@ export default function SolutionsPage() {
             </p>
           </div>
 
-          <div className="space-y-12">
+          <div className="space-y-8 sm:space-y-12">
             {SOFTWARE_PLATFORMS.map((platform) => (
               <div
                 key={platform.id}
                 id={platform.id}
-                className="scroll-mt-32 p-8 sm:p-10 rounded-3xl bg-white border border-zinc-200/90 shadow-lg relative overflow-hidden"
+                className="scroll-mt-32 p-5 sm:p-8 lg:p-10 rounded-3xl bg-white border border-zinc-200/90 shadow-lg relative overflow-hidden"
               >
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
                   <div className="lg:col-span-6 space-y-6">
                     <div className="space-y-2">
                       <div className="flex items-center gap-2">

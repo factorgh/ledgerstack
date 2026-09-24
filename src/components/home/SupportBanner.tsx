@@ -42,32 +42,32 @@ export const SupportBanner: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 lg:py-28 bg-zinc-950 text-white relative overflow-hidden border-t border-zinc-900">
+    <section className="py-14 sm:py-20 lg:py-28 bg-zinc-950 text-white relative overflow-hidden border-t border-zinc-900">
       {/* Visual background elements */}
       <div className="absolute inset-0 bg-grid-pattern-light opacity-10" />
       <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-amber-500/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           {/* Left Column */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 space-y-5 sm:space-y-6">
             <Badge variant="dark" size="md">
               CONTINUED PEACE OF MIND
             </Badge>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
               We&apos;re here <span className="text-gradient-gold-light">after implementation.</span>
             </h2>
 
-            <p className="text-zinc-300 text-base sm:text-lg leading-relaxed font-normal">
+            <p className="text-zinc-300 text-sm sm:text-base lg:text-lg leading-relaxed font-normal">
               Your technology journey doesn&apos;t end when the system goes live. Ledgerstack provides ongoing support to help users resolve issues, understand their systems, and keep business operations moving.
             </p>
 
-            <div className="p-4 rounded-2xl bg-zinc-900 border border-zinc-800 space-y-2">
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-zinc-900 border border-zinc-800 space-y-2">
               <div className="text-xs font-bold text-amber-400 uppercase tracking-wider font-mono">
                 Support Advisory Hotlines
               </div>
-              <div className="flex flex-wrap gap-4 text-sm font-mono text-zinc-200">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-4 text-xs sm:text-sm font-mono text-zinc-200">
                 <a href={`tel:${COMPANY_INFO.phones[0]}`} className="hover:text-amber-400 hover:underline flex items-center gap-1.5">
                   <Phone className="w-3.5 h-3.5 text-amber-400" />
                   {COMPANY_INFO.displayPhones[0]}
@@ -79,7 +79,7 @@ export const SupportBanner: React.FC = () => {
               </div>
             </div>
 
-            <div className="pt-2 flex flex-wrap items-center gap-4">
+            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <Button
                 variant="primary"
                 size="lg"
@@ -102,13 +102,13 @@ export const SupportBanner: React.FC = () => {
           </div>
 
           {/* Right Column: 4 Support Feature Cards */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
             {supportFeatures.map((feat, idx) => {
               const Icon = feat.icon;
               return (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-zinc-900/90 border border-zinc-800 hover:border-amber-400/50 hover:bg-zinc-900 transition-all space-y-3 group"
+                  className="p-5 sm:p-6 rounded-2xl bg-zinc-900/90 border border-zinc-800 hover:border-amber-400/50 hover:bg-zinc-900 transition-all space-y-3 group"
                 >
                   <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Icon className="w-5 h-5" />

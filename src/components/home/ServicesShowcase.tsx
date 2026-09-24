@@ -34,29 +34,29 @@ export const ServicesShowcase: React.FC = () => {
   };
 
   return (
-    <section className="py-20 lg:py-28 bg-white border-t border-zinc-200/80 relative">
+    <section className="py-14 sm:py-20 lg:py-28 bg-white border-t border-zinc-200/80 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div className="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4 mb-10 sm:mb-16">
           <Badge variant="gold" size="md">
             WHAT WE DO
           </Badge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-950 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-950 tracking-tight">
             Everything you need to <span className="text-gradient-gold">work smarter.</span>
           </h2>
-          <p className="text-zinc-600 text-base sm:text-lg leading-relaxed">
+          <p className="text-zinc-600 text-sm sm:text-base lg:text-lg leading-relaxed">
             From implementing business software to training your workforce and safeguarding your systems, we provide comprehensive technology solutions built for real results.
           </p>
         </div>
 
         {/* 5 Core Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {SERVICES.map((srv, index) => {
             const isWide = index === 0;
             return (
               <div
                 key={srv.id}
-                className={`group rounded-3xl border transition-all duration-300 p-6 sm:p-8 flex flex-col justify-between ${
+                className={`group rounded-3xl border transition-all duration-300 p-5 sm:p-8 flex flex-col justify-between ${
                   isWide
                     ? "md:col-span-2 lg:col-span-2 bg-gradient-to-br from-zinc-950 via-zinc-900 to-black text-white border-zinc-800 shadow-xl"
                     : "bg-white border-zinc-200/90 hover:border-amber-400 hover:shadow-md text-zinc-900"

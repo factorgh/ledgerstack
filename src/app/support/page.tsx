@@ -95,22 +95,22 @@ export default function SupportPage() {
       </section>
 
       {/* Support Tiers Grid */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <section className="py-14 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-16">
           <div className="text-center max-w-3xl mx-auto space-y-3">
             <Badge variant="gold" size="md">
               CORE SUPPORT PILLARS
             </Badge>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight">
               Comprehensive operational care for your software ecosystem
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8">
             {supportTiers.map((tier, idx) => (
               <div
                 key={idx}
-                className="p-8 rounded-3xl bg-white border border-zinc-200/90 hover:border-amber-400 hover:shadow-md transition-all duration-300 space-y-4"
+                className="p-5 sm:p-8 rounded-3xl bg-white border border-zinc-200/90 hover:border-amber-400 hover:shadow-md transition-all duration-300 space-y-4"
               >
                 <div className="w-10 h-10 rounded-2xl bg-amber-50 text-amber-800 border border-amber-200 flex items-center justify-center font-mono font-bold text-xs">
                   0{idx + 1}

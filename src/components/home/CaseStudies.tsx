@@ -13,17 +13,17 @@ import {
 
 export const CaseStudies: React.FC = () => {
   return (
-    <section className="py-20 lg:py-28 relative bg-[#FAFAFA] border-t border-zinc-200/80">
+    <section className="py-14 sm:py-20 lg:py-28 relative bg-[#FAFAFA] border-t border-zinc-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-          <div className="space-y-4 max-w-2xl">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-5 sm:gap-6 mb-10 sm:mb-16">
+          <div className="space-y-3 sm:space-y-4 max-w-2xl">
             <Badge variant="gold" size="md">
               CLIENT ENGAGEMENTS &amp; PROOF
             </Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-950 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-950 tracking-tight">
               Helping businesses <span className="text-gradient-gold">work better.</span>
             </h2>
-            <p className="text-zinc-600 text-base sm:text-lg leading-relaxed">
+            <p className="text-zinc-600 text-sm sm:text-base lg:text-lg leading-relaxed">
               We partner with organizations across food processing, infrastructure engineering, logistics, tech, and retail healthcare to build resilient operational systems.
             </p>
           </div>
@@ -34,11 +34,11 @@ export const CaseStudies: React.FC = () => {
         </div>
 
         {/* Case Study Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {CLIENTS.map((client) => (
             <div
               key={client.id}
-              className="group rounded-3xl bg-white border border-zinc-200/90 hover:border-amber-400 hover:shadow-md transition-all duration-300 p-6 sm:p-8 flex flex-col justify-between"
+              className="group rounded-3xl bg-white border border-zinc-200/90 hover:border-amber-400 hover:shadow-md transition-all duration-300 p-5 sm:p-8 flex flex-col justify-between"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">

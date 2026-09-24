@@ -24,30 +24,30 @@ export const SoftwareShowcase: React.FC = () => {
     SOFTWARE_PLATFORMS.find((p) => p.id === selectedId) || SOFTWARE_PLATFORMS[0];
 
   return (
-    <section className="py-20 lg:py-28 relative bg-[#FAFAFA] border-t border-zinc-200/80">
+    <section className="py-14 sm:py-20 lg:py-28 relative bg-[#FAFAFA] border-t border-zinc-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div className="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4 mb-10 sm:mb-16">
           <Badge variant="gold" size="md">
             SUPPORTED PLATFORMS
           </Badge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-950 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-950 tracking-tight">
             The right software for the way <span className="text-gradient-gold">your business works.</span>
           </h2>
-          <p className="text-zinc-600 text-base sm:text-lg leading-relaxed">
+          <p className="text-zinc-600 text-sm sm:text-base lg:text-lg leading-relaxed">
             Different businesses have distinct operating models. We help you choose, configure, and operate the platform that perfectly aligns with your team, scale, and industry.
           </p>
         </div>
 
         {/* Platform Selection Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+        <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 mb-8 sm:mb-10">
           {SOFTWARE_PLATFORMS.map((platform) => {
             const isSelected = platform.id === selectedId;
             return (
               <button
                 key={platform.id}
                 onClick={() => setSelectedId(platform.id)}
-                className={`px-5 py-3 rounded-2xl text-sm font-bold transition-all duration-200 flex items-center gap-2 border cursor-pointer ${
+                className={`px-3.5 sm:px-5 py-2 sm:py-3 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-bold transition-all duration-200 flex items-center gap-1.5 sm:gap-2 border cursor-pointer ${
                   isSelected
                     ? "bg-amber-500 text-zinc-950 border-amber-600 shadow-md shadow-amber-500/20"
                     : "bg-white text-zinc-700 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50"
@@ -69,7 +69,7 @@ export const SoftwareShowcase: React.FC = () => {
         </div>
 
         {/* Detailed Spotlight Card */}
-        <div className="rounded-3xl bg-white border border-zinc-200 p-6 sm:p-10 shadow-lg relative overflow-hidden">
+        <div className="rounded-3xl bg-white border border-zinc-200 p-5 sm:p-10 shadow-lg relative overflow-hidden">
           {/* Subtle gold glow */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
 

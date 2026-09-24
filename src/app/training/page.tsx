@@ -115,13 +115,13 @@ export default function TrainingPage() {
       />
 
       {/* Course Tracks Grid */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <section className="py-14 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-16">
           <div className="text-center max-w-3xl mx-auto space-y-3">
             <Badge variant="gold" size="md">
               CURRICULUM TRACKS
             </Badge>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight">
               Structured training programs for every operational role
             </h2>
             <p className="text-zinc-600 text-sm sm:text-base leading-relaxed">
@@ -129,14 +129,14 @@ export default function TrainingPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-8">
             {trainingTracks.map((track) => (
               <div
                 key={track.id}
-                className="p-8 rounded-3xl bg-white border border-zinc-200/90 hover:border-amber-400 hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+                className="p-5 sm:p-8 rounded-3xl bg-white border border-zinc-200/90 hover:border-amber-400 hover:shadow-md transition-all duration-300 flex flex-col justify-between"
               >
-                <div className="space-y-6">
-                  <div className="flex items-center justify-between">
+                <div className="space-y-4 sm:space-y-6">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800">
                       {track.badge}
                     </span>
