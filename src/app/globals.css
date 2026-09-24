@@ -1,26 +1,139 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #09090b;
+    --card: #ffffff;
+    --card-foreground: #09090b;
+    --popover: #ffffff;
+    --popover-foreground: #09090b;
+    --primary: #d97706; /* Rich Gold */
+    --primary-foreground: #ffffff;
+    --secondary: #18181b; /* Deep Black/Zinc */
+    --secondary-foreground: #fafafa;
+    --muted: #f4f4f5;
+    --muted-foreground: #71717a;
+    --accent: #f59e0b; /* Bright Gold */
+    --accent-foreground: #09090b;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #e4e4e7;
+    --input: #e4e4e7;
+    --ring: #d97706;
+    --radius: 0.75rem;
   }
 }
 
+/* Light Mode Global Styling */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #09090b;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+}
+
+/* Grid & Pattern utilities for Light Mode */
+.bg-grid-pattern-light {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(24, 24, 27, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(24, 24, 27, 0.04) 1px, transparent 1px);
+}
+
+.bg-grid-pattern-gold {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(217, 119, 6, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(217, 119, 6, 0.06) 1px, transparent 1px);
+}
+
+.bg-dots-pattern {
+  background-image: radial-gradient(rgba(24, 24, 27, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Gold, Black & White Gradients */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #b45309 0%, #d97706 40%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-black-gold {
+  background: linear-gradient(135deg, #09090b 20%, #78350f 70%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold-light {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fbbf24 100%);
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(135deg, #09090b 0%, #18181b 50%, #27272a 100%);
+}
+
+/* Subtle Gold & Luxury Shadows */
+.shadow-gold-sm {
+  box-shadow: 0 4px 14px -2px rgba(217, 119, 6, 0.15);
+}
+
+.shadow-gold-md {
+  box-shadow: 0 10px 25px -3px rgba(217, 119, 6, 0.20);
+}
+
+.shadow-luxury {
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.07), 0 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+/* Light Glassmorphism Cards */
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(228, 228, 231, 0.9);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  background: #ffffff;
+  border-color: rgba(217, 119, 6, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(217, 119, 6, 0.14);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
+
+/* Pulse badge animation */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
 }
