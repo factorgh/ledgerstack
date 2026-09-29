@@ -3,6 +3,8 @@ import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { UnderConstruction } from "@/components/shared/UnderConstruction";
+import { IS_OWING } from "@/config/siteStatus";
 import { COMPANY_INFO } from "@/data/company";
 
 const jakartaSans = Plus_Jakarta_Sans({
@@ -114,9 +116,15 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#FAFAFA] text-zinc-900 font-sans selection:bg-amber-500/20 selection:text-amber-900">
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+        {IS_OWING ? (
+          <UnderConstruction />
+        ) : (
+          <>
+            <Navbar />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </>
+        )}
       </body>
     </html>
   );
